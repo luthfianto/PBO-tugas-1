@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class Instructor {
-    StudentList academicStudents, thesisStudents;
+    StudentArrayList academicStudents, thesisStudents;
 
     public Instructor(){
         academicStudents=new StudentArrayList();
@@ -9,7 +9,7 @@ public class Instructor {
     }
 
     public StudentList getStudents(){
-        StudentArrayList studentList = (StudentArrayList) new ArrayList<Student>(academicStudents);
+        StudentArrayList studentList = new StudentArrayList(academicStudents);
         studentList.addAll(thesisStudents);
         return studentList;
     }

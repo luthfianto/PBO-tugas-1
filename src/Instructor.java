@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class Instructor {
     StudentArrayList academicStudents, thesisStudents;
 

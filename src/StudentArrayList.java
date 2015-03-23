@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class StudentArrayList extends ArrayList implements StudentList {
+public class StudentArrayList extends ArrayList<Student> implements StudentList {
     public StudentArrayList(){
         super();
     }

@@ -20,10 +20,10 @@ public class Main {
 
         //4
         Student mufti = new Student("mufti");
-        AcademicStaff loket = new AcademicStaff();
+        AcademicStaff akademik = new AcademicStaff();
 
-        loket.assignAcademicStudent(pak_janoe,mufti);
-        loket.assignThesisStudent(pak_janoe, mufti);
+        akademik.assignAcademicStudent(pak_janoe, mufti);
+        akademik.assignThesisStudent(pak_janoe, mufti);
     }
 }
 /*

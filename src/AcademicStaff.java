@@ -1,6 +1,13 @@
 public class AcademicStaff {
-    void assignAcademicStudent(Instructor instructor, Student student){}
-    void assignThesisStudent(Instructor instructor, Student student){}
+    void assignAcademicStudent(Instructor instructor, Student student) {
+        instructor.academicStudents.add(student);
+        student.setAcademicAdvisor(instructor);
+    }
+
+    void assignThesisStudent(Instructor instructor, Student student) {
+        instructor.thesisStudents.add(student);
+        student.setThesisAdvisor(instructor);
+    }
 }
 
 /*
